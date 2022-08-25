@@ -5,7 +5,7 @@ public class Character {
     String name;
 
     public void sayMyName() {
-        System.out.println("Hello I am " + name);
+        System.out.println("My name is " + name + "\n" + "My Strength is " + strength + "\n" + "My Agility is " + agility + "\n" + "My intelligence is " + intelligence + "\n");
     }
 
     public Character(int str, int agi, int intel, String characterName) {
@@ -13,7 +13,7 @@ public class Character {
         strength = str;
         agility = agi;
         intelligence = intel;
-    
-        System.out.println("My name is " + name + "\n" + "My Strength is " + strength + "\n" + "My Agility is " + agility + "\n" + "My intelligence is " + intelligence + "\n");
+        
     }
+       
 }
