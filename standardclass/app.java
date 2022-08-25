@@ -1,38 +1,60 @@
 public class App {
     public static void main(String[] args) {
-        
-        //based on my computer game MMORPG, League of Angels - Heavens Fury
-        Character Dragoon = new Character();
 
-        Dragoon.strength = 9;
-        Dragoon.agility = 7;
-        Dragoon.intelligence = 3;
-        Dragoon.name = "Akira";
-        Dragoon.sayMyName();
-        Dragoon.sayMystrength();
-        Dragoon.sayMyagility();
-        Dragoon.sayMyintelligence();
-        
-        Character mage = new Character();
+        Character TemplarAssasin = new Character();
 
-        mage.strength = 4;
-        mage.agility = 5;
-        mage.intelligence = 10;
-        mage.name = "Legion";
-        mage.sayMyName();
-        mage.sayMyagility();
-        mage.sayMystrength();
-        mage.sayMyintelligence();
+        TemplarAssasin.strength = 5;
+        TemplarAssasin.agility = 8;
+        TemplarAssasin.intelligence = 4;
+        TemplarAssasin.name = "Lanaya";
+        TemplarAssasin.sayMyName();
+        TemplarAssasin.sayMystrength();
+        TemplarAssasin.sayMyagility();
+        TemplarAssasin.sayMyintelligence();
         
-        Character archer = new Character();
+        Character Axe = new Character();
 
-        archer.strength = 5;
-        archer.agility = 10;
-        archer.intelligence = 4;
-        archer.name = "Shen Yue";
-        archer.sayMyName();
-        archer.sayMystrength();
-        archer.sayMyagility();
-        archer.sayMyintelligence();
+        Axe.strength = 9;
+        Axe.agility = 5;
+        Axe.intelligence = 4;
+        Axe.name = "Mogul Khan";
+        Axe.sayMyName();
+        Axe.sayMyagility();
+        Axe.sayMystrength();
+        Axe.sayMyintelligence();
+        
+        Character Butcher = new Character();
+
+        Butcher.strength = 9;
+        Butcher.agility = 4;
+        Butcher.intelligence = 6;
+        Butcher.name = "Pudge";
+        Butcher.sayMyName();
+        Butcher.sayMystrength();
+        Butcher.sayMyagility();
+        Butcher.sayMyintelligence();
+
+        Character StealthAssasin = new Character();
+
+        StealthAssasin.strength = 4;
+        StealthAssasin.agility = 10;
+        StealthAssasin.intelligence = 3;
+        StealthAssasin.name = "Rikimaru";
+        StealthAssasin.sayMyName();
+        StealthAssasin.sayMystrength();
+        StealthAssasin.sayMyagility();
+        StealthAssasin.sayMyintelligence();
+
+        Character Tinker = new Character();
+
+        Tinker.strength = 4;
+        Tinker.agility = 3;
+        Tinker.intelligence = 10;
+        Tinker.name = "Boush";
+        Tinker.sayMyName();
+        Tinker.sayMystrength();
+        Tinker.sayMyagility();
+        Tinker.sayMyintelligence();
     }
+
 }
