@@ -11,7 +11,5 @@ public class App {
 
         Pet bird = new Pet("Secre", 5, 8, false);
         bird.petDescription();
-
-
     }
 }
