@@ -46,3 +46,40 @@ V 3
 H A 2 5
 V 3 3
 ? 2 4 1
+
+https://codeforces.com/blog/entry/72527
+
+#include<bits/stdc++.h>
+using namespace std;
+
+const int mod = 1e9 + 7;
+int main() {
+  // 0 <= a, b, c < mod
+  int a = 1e9, b = 1e9, c = 1e9;
+
+  int sum = (a + b + c) % mod; 
+  // overflow as (a + b + c) > INT_MAX(=2147483647)
+  // better way: ((a + b) % mod + c) % mod
+  cout << sum << '\n';
+
+  int product = a * b % mod;
+  // overflow as a * b > INT_MAX
+  // better way: 1LL * a * b % mod
+  cout << product << '\n';
+
+  int random = 1LL * a * (b * c % mod) % mod; 
+  // overflow in the (b * c % mod) part
+  // correct way: 1LL * a * (1LL * b * c % mod) % mod
+  // better way: 1LL * a * b % mod * c % mod
+  cout << random << '\n';
+
+  a = 1e8;
+  int sub = (a - b) % mod; 
+  // not overflow, but when a < b, it will produce a negative number
+  // better way: (a - b + mod) % mod
+  cout << sub << '\n';
+
+  // Also always make sure that after each arithmetic operation
+  // All of your variables are in the range [0, mod-1]
+  return 0;
+}
